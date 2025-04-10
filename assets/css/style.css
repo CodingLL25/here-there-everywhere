@@ -28,3 +28,33 @@ h1, h2, h3{
 #navbar {
     background-color: var(--tertiary-color);
 }
+
+/* main content */
+main {
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    margin-top: 100px;
+}
+
+/* footer */
+#contact {
+    background-color: var(--primary-color);
+}
+
+.social-links {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 150%;
+}
+
+#contact .social-links i {
+    color: var(--tertiary-color);
+    transition: color 0.2s ease-in-out;
+}
+
+#contact .social-links i:hover {
+    color: var(--light-light-highlight);
+}
