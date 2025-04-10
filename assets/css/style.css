@@ -13,3 +13,18 @@
     --light-highlight: #EEB4D1; /* light pink */
     --light-light-highlight: #EEB4D1; /* light pink */
 }
+
+/* Global styles*/
+body {
+    font-family: var(--primary-font);
+}
+
+h1, h2, h3{
+    text-transform: uppercase;   
+    padding-left: 1rem;
+}
+
+/* Navbar styling */
+#navbar {
+    background-color: var(--tertiary-color);
+}
