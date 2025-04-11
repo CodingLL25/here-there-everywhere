@@ -8,7 +8,7 @@
     --secondary-font: "Lato", cursive;
     --primary-color: #002060; /* Dark Blue */
     --secondary-color: #416a8e; /* blue */
-    --tertiary-color: #BDD7EE; /* light blue */
+    --tertiary-color: rgb(189, 215, 238); /* light blue */
     --primary-highlight: #CF2F7F; /* Dark pink */ 
     --light-highlight: #EEB4D1; /* light pink */
     --light-light-highlight: #EEB4D1; /* light pink */
@@ -22,6 +22,11 @@ body {
 h1, h2, h3, h4{
     text-transform: uppercase;   
     padding-left: 1rem;
+}
+
+p {  
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
 }
 
 /* Navbar styling */
@@ -44,8 +49,20 @@ h1, h2, h3, h4{
     background-color: rgba(255, 255, 255, 0.865);
     text-align: center;
     position: absolute;
+    padding-top: 0.4rem;
     top: 250px;
     width: 100%;
+}
+
+/* About this page / coverage */
+#overview {
+    background-color: rgba(189, 215, 238, 0.35);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#overview > h2, h3 {
+    color: var(--secondary-color);
 }
 
 /* footer */
@@ -69,4 +86,49 @@ h1, h2, h3, h4{
 
 #contact .social-links i:hover {
     color: var(--light-light-highlight);
+}
+
+/* services */
+
+#country-coverage .card-footer {
+    font-weight: bold;
+    color: var(--highlight-color);
+    background-color: transparent;
+}
+
+#country-coverage .card {
+    margin-bottom: 1.5rem;
+}
+
+
+/* Media query for tablets, 768px and up */
+@media screen and (min-width: 768px) {
+    /* Make all services cards the same size */
+    #country-coverage .card-body {
+        min-height: 191px;
+    }
+}
+
+/* Media query for large devices, 992px  and up */
+@media screen and (min-width: 992px) {
+    /* Make all services cards the same size */
+    #country-coverage .card-body {
+        min-height: auto;
+    }
+}
+
+/* Media query for larger devices, 1200px  and up */
+@media screen and (min-width: 1200px) {
+    /* Make all services cards the same size */
+    #country-coverage .card-body {
+        min-height: 220px;
+    }
+}
+
+/* Media query for extra devices, 1400px  and up */
+@media screen and (min-width: 1400px) {
+    /* Make all services cards the same size */
+    #country-coverage .card-body {
+        min-height: 195px;
+    }
 }
