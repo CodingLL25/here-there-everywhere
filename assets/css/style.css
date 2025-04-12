@@ -65,6 +65,14 @@ p {
     color: var(--secondary-color);
 }
 
+#country-coverage {
+    padding-top: 0.8rem;
+}
+
+#card-title {
+    color: var(--primary-color);
+}
+
 /* footer */
 #contact {
     background-color: var(--primary-color);
@@ -105,7 +113,7 @@ p {
 @media screen and (min-width: 768px) {
     /* Make all services cards the same size */
     #country-coverage .card-body {
-        min-height: 191px;
+        min-height: 167px;
     }
 }
 
@@ -113,7 +121,7 @@ p {
 @media screen and (min-width: 992px) {
     /* Make all services cards the same size */
     #country-coverage .card-body {
-        min-height: auto;
+        min-height: 170px;
     }
 }
 
@@ -121,14 +129,11 @@ p {
 @media screen and (min-width: 1200px) {
     /* Make all services cards the same size */
     #country-coverage .card-body {
-        min-height: 220px;
+        min-height: 194px;
+    }
+
+    #country-coverage .card-footer {
+        height: 75px;
     }
 }
 
-/* Media query for extra devices, 1400px  and up */
-@media screen and (min-width: 1400px) {
-    /* Make all services cards the same size */
-    #country-coverage .card-body {
-        min-height: 195px;
-    }
-}
