@@ -110,7 +110,7 @@ div > h2 {
 }
 
 /* Japan gallery */
-#kawaguchiko-gallery img {
+#japan-gallery img {
     width: 100%;
     line-height: 0;
 }
@@ -141,8 +141,8 @@ div > h2 {
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
     /* Make gallery responsive  */
-    #kawaguchiko-gallery {
-        column-count: 2; 
+    #japan-gallery {
+        column-count: 2;   
         column-gap: 0;
     }
 
@@ -157,24 +157,23 @@ div > h2 {
     }
 
     /* Make gallery responsive  */
-    #kawaguchiko-gallery {
-        column-count: 4;   /* NOT WORKING - want images to show side by side */
+    #japan-gallery {
+        column-count: 4;   
         column-gap: 0;
     }
-    
 }
 
 
 /* Media query for large devices, 992px  and up */
 @media screen and (min-width: 992px) {
     /* Make all home page cards the same size */
-    #country-coverage .card-body {
+    #japan-coverage .card-body {
         min-height: 170px;
     }
 
     /* Make gallery responsive  */
-    #kawaguchiko-gallery {
-        column-count: 4;   /* NOT WORKING - want images to show side by side */
+    #japan-gallery {
+        column-count: 4;   
         column-gap: 0;
     }
 
@@ -192,8 +191,8 @@ div > h2 {
     }
 
     /* Make gallery responsive  */
-    #kawaguchiko-gallery {
-        column-count: 4;   /* NOT WORKING - want images to show side by side */
+    #japan-gallery {
+        column-count: 4;   
         column-gap: 0;
     }
 }
